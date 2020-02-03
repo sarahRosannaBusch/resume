@@ -30,6 +30,18 @@ main
     }
 }
 
+a
+{
+    color: inherit;
+    font-style: italic;
+    cursor: pointer;
+}
+
+p > a
+{
+    color: rgb(77, 77, 255);
+}
+
 header
 {    
     padding-top: 0.2em;
@@ -87,7 +99,6 @@ h5
 {
     background: #B9B9B9;
     color: black;
-    font-style: italic;
     font-size: 10pt;
     margin-left: 1em;
     margin-right: 1em;
@@ -128,7 +139,7 @@ li
 .padded
 {
     margin-left: 2em;
-    margin-right: 1em;
+    margin-right: 2em;
     margin-bottom: 1em;
 }
 
