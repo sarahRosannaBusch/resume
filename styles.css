@@ -14,32 +14,15 @@ body
     background: black;
     color: #A0A0A0;
     font-size: 12pt;
+    max-width: 1500px;
+    margin: auto;
 }
 
 main
 {
     display: inline-block;
     vertical-align: top;
-    width: 100vw;
-}
-
-@media only screen and (min-width: 1000px) {
-    main
-    {
-        width: 49vw;
-    }
-}
-
-a
-{
-    color: inherit;
-    font-style: italic;
-    cursor: pointer;
-}
-
-p > a
-{
-    color: rgb(77, 77, 255);
+    width: 100%;
 }
 
 header
@@ -49,9 +32,31 @@ header
     text-align: center;
 }
 
-section
+article
 {
     margin-bottom: 0.75em;
+}
+
+@media only screen and (min-width: 1000px) {
+    main
+    {
+        display: flex;
+    }
+
+    section
+    {
+        flex: 0.5;
+    }
+
+    .left
+    {
+        margin-right: 0.375em;
+    }
+
+    .right
+    {
+        margin-left: 0.375em;
+    }
 }
 
 .highlights
@@ -104,6 +109,18 @@ h5
     margin-right: 1em;
     margin-bottom: 0.5em;
     text-indent: 0.5em;
+}
+
+a
+{
+    color: inherit;
+    font-style: italic;
+    cursor: pointer;
+}
+
+p > a
+{
+    color: rgb(77, 77, 255);
 }
 
 ul
@@ -197,4 +214,15 @@ li
 .yellow
 {
     color: yellow;
+}
+
+footer {
+    background: crimson;
+    color: black;
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+    text-align: center;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 10pt;
 }
