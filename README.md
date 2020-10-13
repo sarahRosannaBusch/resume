@@ -1,2 +1,2 @@
 # resume
-html version of my resume
+My resume and portfolio site.
