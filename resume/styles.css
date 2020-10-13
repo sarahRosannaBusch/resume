@@ -1,0 +1,228 @@
+/** @brief  styles for my resume
+ *  @author Sarah Rosanna Busch
+ *  @date   31 Januray 2020
+ */
+
+ * 
+ {
+     box-sizing: border-box; /* padding and border are included in total width/height of all elements */
+     margin: 0px;
+ }
+ 
+ body
+ {    
+     background: black;
+     color: #A0A0A0;
+     font-size: 12pt;
+     max-width: 1500px;
+     margin: auto;
+ }
+ 
+ main
+ {
+     display: inline-block;
+     vertical-align: top;
+     width: 100%;
+ }
+ 
+ header
+ {    
+     padding-top: 0.2em;
+     margin-bottom: 0.75em;
+     text-align: center;
+ }
+ 
+ article
+ {
+     margin-bottom: 0.75em;
+ }
+ 
+ @media only screen and (min-width: 25cm) {
+     main
+     {
+         display: flex;
+     }
+ 
+     section
+     {
+         flex: 0.5;
+     }
+ 
+     .left
+     {
+         margin-right: 0.375em;
+     }
+ 
+     .right
+     {
+         margin-left: 0.375em;
+     }
+ }
+ 
+ .highlights
+ {
+     background: #232323;
+     padding:0.5em;
+     text-align: center;
+ }
+ 
+ h1 
+ {
+     font-size: 24pt;
+     color: white;
+ }
+ 
+ h2
+ {
+     font-size: 16pt;
+     color: white;
+     text-align: center;
+ }
+ 
+ h3
+ {
+     background-image: linear-gradient(to right, blue, white);
+     color: black;
+     margin-bottom: 0.5em;
+     margin-top: 0.25em;
+     font-family: monospace;
+     text-align: center;
+ }
+ 
+ h4
+ {
+     color: #B9B9B9;
+     font-weight: bold;
+     font-family: monospace;
+     font-size: 14pt;
+     margin-left: 1em;
+     margin-right: 1em;
+     margin-top: 0.25em;
+ }
+ 
+ h5
+ {
+     background: #B9B9B9;
+     color: black;
+     font-size: 10pt;
+     margin-left: 1em;
+     margin-right: 1em;
+     margin-bottom: 0.5em;
+     text-indent: 0.5em;
+ }
+ 
+ a
+ {
+     color: inherit;
+     font-style: italic;
+     cursor: pointer;
+ }
+ 
+ p > a
+ {
+     color: rgb(77, 77, 255);
+ }
+ 
+ ul
+ {
+     display: inline-block;
+     padding: 0;
+ }
+ 
+ li
+ {
+     padding-bottom: 0.5em;
+ }
+ 
+ .noBullets
+ {
+     list-style-type: none;
+     color: white;
+ }
+ 
+ .noPadding
+ {
+     padding: 0;
+ }
+ 
+ .socialLogo
+ {
+     width: 30px;
+     cursor: pointer;
+     margin-left: 0.25em;
+     margin-right: 0.25em;
+ }
+ 
+ .padded
+ {
+     margin-left: 2em;
+     margin-right: 2em;
+     margin-bottom: 1em;
+ }
+ 
+ .italic
+ {
+     font-style: italic;
+ }
+ 
+ .centered
+ {
+     text-align: center;
+ }
+ 
+ .topGradient
+ {
+     background-image: linear-gradient(#232323, black);
+     padding-top: 0.5em;
+ }
+ 
+ .bottomGradient
+ {    
+     background-image: linear-gradient(black, #232323);
+ }
+ 
+ .purple > h4
+ {
+     color:blueviolet;
+ }
+ 
+ .purple > h5
+ {
+     background-image: linear-gradient(to right, blueviolet, blueviolet, white);
+ }
+ 
+ .teal > h4
+ {
+     color:teal;
+ }
+ 
+ .teal > h5
+ {
+     background-image: linear-gradient(to right, teal, teal, white);
+ }
+ 
+ .orange > h4
+ {
+     color:orange;
+ }
+ 
+ .orange > h5
+ {
+     background-image: linear-gradient(to right, orange, orange, white);
+ }
+ 
+ .yellow
+ {
+     color: yellow;
+ }
+ 
+ footer {
+     background: crimson;
+     color: black;
+     padding-top: 0.25em;
+     padding-bottom: 0.25em;
+     text-align: center;
+     font-family: monospace;
+     font-weight: bold;
+     font-size: 10pt;
+ }
