@@ -84,7 +84,7 @@ var PHOTOS = {
         'snow13.jpg',
         //'snow14.jpg',
         'snow15.jpg',
-        'snow16.jpg'
+        //'snow16.jpg'
     ]
 
 };
