@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8'>
+    <title> Photo Album </title>
+    <meta name='author' content='Sarah Rosanna Busch'>
+    <meta name='description' content='photo album web app'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel='stylesheet' href='styles.css'>
+    <!--link rel='icon shortcut' href='img/icon.png'-->
+</head>
+
+<body onload='photoAlbum.init()'>
+
+    <main id='homeView'>
+        <!-- figures get inserted here -->
+    </main> <!-- end of main#home -->
+
+    <main id='galleryView' style='display:none'>
+        <div id='galleryPhotos'>
+            <!-- thumbnail images displayed here -->
+        </div>
+    </main>
+
+    <main id='photoView' onclick='photoAlbum.showFull(false)' style="display:none">
+        <img id='fullPhoto' src='' />
+    </main>
+
+    <main id="aboutView" style='display:none'>
+        <figure class='gallery'>
+            <img alt='' src=''/>
+        </figure>
+        <p class='about'>
+            
+        </p>
+    </main>
+
+    <button id='menuIcon' onclick='photoAlbum.openMenu(true)' style='display:none'>
+        <div class='iconBar'></div>
+        <div class='iconBar'></div>
+        <div class='iconBar'></div>
+    </button>  
+
+    <div id='overlay' onclick='photoAlbum.openMenu(false)' style='display:none'>
+        <!-- disables page behind menu when it's open -->
+    </div>
+    <nav class='menu' style='display:none'>
+        <button id='homeBtn' onclick='photoAlbum.nav("home")' class='curPage'> home </button>
+        <!-- button for each category listed in photos.js get created here -->
+    </nav>
+
+    <script src='framework.js'></script>
+    <script src='photoAlbum.js'></script>
+    <script src='photos_sarah.js'></script>
+</body>
+</html>
