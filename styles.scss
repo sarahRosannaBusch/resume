@@ -1,0 +1,169 @@
+/** filename: styles.scss
+ *  description: main stylesheet for sarahRosannaBusch.ca
+ *  author: Sarah Rosanna Busch
+ *  date: 17 April 2020
+ */
+
+@import 'styles/signature.scss';
+
+$grey0: #010101;
+$grey1: #121212;
+$grey2: #232323;
+$grey3: #343434;
+$grey4: #454545;
+$grey5: #565656;
+$grey6: #676767;
+$grey7: #787878;
+$grey8: #898989;
+$grey9: #9A9A9A;
+$grey10: #ABABAB;
+$grey11: #BCBCBC;
+$grey12: #CDCDCD;
+$grey13: #DEDEDE;
+$grey14: #EFEFEF;
+
+/******************************** fundamentals *********************************/
+
+* 
+{
+    box-sizing: border-box; /* padding and border are included in total width/height of all elements */
+    margin: 0px;
+}
+
+body
+{    
+    background: $grey3;
+    color: lavender;
+    font-size: 12pt;
+    font-style: monospace;
+}
+
+.mainContainer
+{
+    position: relative;
+    max-width: 10cm;
+}
+
+@media screen and (min-width: 10cm)
+{
+    body {
+        background-image: url("img/background.svg");
+        background-repeat: no-repeat;
+        background-position: left;
+        background-position-y: center;
+        background-size: cover;
+        display: flex;
+    }
+
+    .mainContainer {
+        display: inline-block;
+        height: 95vh;
+        margin-left: 5vw;
+        margin-right: 2vw;
+        margin-top: 2vh;
+        box-shadow: 2px 5px 20px 5px lavender;
+    }
+
+    #sidePanel {
+        height: 95vh;
+        margin: 2vh;
+        margin-right: 5vw;
+        flex: 1;
+        box-shadow: 2px 5px 20px 5px lavender;
+    }
+
+    #sideView {
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+}
+
+header
+{    
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: monospace;
+    background: $grey2;
+
+    img {
+        width: 5cm;
+    }
+}
+
+main
+{
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+}
+
+footer
+{
+    width: 100%;
+    height: 80px;
+    user-select: none;
+    background-image: linear-gradient(blueviolet, rgba(230,230,250,0.7));
+
+    #signature {
+        height: 80px;
+        position: absolute;
+    }
+
+    #links {
+        padding-top: 25px;
+        text-align: center;
+    }
+
+    a:link {
+        text-decoration: none;
+    }
+}
+
+section
+{
+    background: $grey2;
+    padding-bottom: 5px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+h2
+{
+    font-size: 16pt;
+    background-image: linear-gradient(to right, blueviolet, lavender);
+    color: black;
+    font-family: monospace;
+    text-align: center;
+}
+
+p
+{
+    padding: 1em;
+    max-width: 15cm;
+    margin: auto;
+}
+
+button 
+{
+    border: none;
+    color: $grey6;
+    background-image: linear-gradient($grey4, black);
+    font-weight: bold;
+    margin-bottom: 5px;
+    width: 100%;
+    padding: 0.5em;
+    outline: none;
+}
+
+/******************************** misc *********************************/
+
+.socialLogo
+{
+    width: 30px;
+    cursor: pointer;
+    margin-left: 0.25em;
+    margin-right: 0.25em;
+}
