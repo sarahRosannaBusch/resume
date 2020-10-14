@@ -97,6 +97,10 @@ footer a:link {
   footer {
     display: none;
   }
+
+  .notForPhone {
+    display: block !important;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
