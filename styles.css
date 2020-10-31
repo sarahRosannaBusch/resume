@@ -147,7 +147,7 @@ button {
 }
 
 button:hover {
-  box-shadow: 2px 2px 7px 2px lavender;
+  box-shadow: 2px 1px 4px 2px lavender;
   color: lavender;
 }
 

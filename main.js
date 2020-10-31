@@ -15,6 +15,9 @@ var main = (function() {
         elem.sidePanel = f.html.getElem('#sidePanel');
         elem.sideView = f.html.getElem('#sideView');
         footer.setup();
+        if(window.innerWidth >= 930) {
+            main.nav("./book/index.html");
+        }
     }
 
     that.nav = function(url) {
