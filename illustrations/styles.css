@@ -28,7 +28,7 @@ header {
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   background-image: linear-gradient(#121212, #454545);
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
 }
 header a {
   font-size: 16pt;
@@ -51,19 +51,58 @@ h1 {
   margin-bottom: 0.5em;
 }
 
+section {
+  width: 100%;
+  padding-top: 5px;
+  background-image: linear-gradient(#121212, #454545);
+  margin-bottom: 5px;
+}
+
 h2 {
   text-align: left;
+  padding: 5px;
   padding-left: 1em;
   margin-top: 0.5em;
   margin-bottom: 0.5em;
   font-family: monospace;
+  background-image: linear-gradient(to right, #343434, #232323);
+  color: blueviolet;
 }
 
 p {
   text-align: left;
   padding: 1em;
-  padding-top: 0;
   color: lavender;
+  max-width: 20cm;
+  margin: auto;
+}
+
+a {
+  font-size: 16pt;
+  font-weight: bold;
+  color: lavender;
+}
+
+a:link {
+  color: lavender;
+}
+
+a:visited {
+  color: lavender;
+}
+
+button {
+  padding: 5px;
+  border-radius: 5px;
+  background: #454545;
+  color: lavender;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: blueviolet;
 }
 
 footer {
