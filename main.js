@@ -16,12 +16,12 @@ var main = (function() {
         elem.sideView = f.html.getElem('#sideView');
         footer.setup();
         if(window.innerWidth >= 930) {
-            main.nav("./book/index.html");
+            main.nav("./pages/swPortfolio/index.html");
         }
     }
 
     that.nav = function(url) {
-        if(window.innerWidth < 930) {
+        if(window.innerWidth < 700) {
             location.assign(url);
         } else {
             if(url === openPage) {

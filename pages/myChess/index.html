@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang='en-US'>
+<head>
+    <meta charset='UTF-8' /> 
+    <title> myChess </title>
+    <meta name='author' content='Sarah Rosanna Busch' />
+    <meta name='description' content='Serverless version of myChess' />
+    <meta name='date' content='21 April 2021' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <link rel='icon shortcut' href='../../img/icon.png' />
+    <link rel='stylesheet' href='libs/chessboardjs/chessboard.css' />
+    <link rel='stylesheet' href='../../styles.css' />
+</head>
+<body onload='myChess.init()' style='background:#343434'>
+    <header>
+        <a href='http://sarahrosannabusch.ca/' target='_parent'>
+            <img class='smAvatar' src='../../img/annarose.svg' />
+            Sarah Rosanna Busch's
+        </a>
+        <h1>Chessboard</h1>
+    </header>
+    <section>
+        <p>
+            In reading a bunch of chess blogs on my phone recently, I got frustrated with a bug in the open source chessboard.js library that makes it unusable on touchscreen. So I found the bug and fixed it, as is demonstrated below. The next step is to clean up the code and submit the fix to gitHub. 
+        </p>
+    </section>
+    <section>
+        <h2>Play Chess</h2>
+        <p id="status" style="text-align:center;">Make your move</p>
+        <div id="myBoard" style="width:95%;max-width:650px;margin:auto"></div>
+        <br>
+        <div id='pgn' style="width:95%;max-width:500px;margin:auto"></div>
+        <br>
+        <div id='fen'></div>
+    </section>
+    <br>
+    <footer class='pageFoot'>
+        <div id='patrons'>
+            <a href='https://www.patreon.com/sarahrosannabusch' target='_blank'>
+                Become a patron
+            </a>
+        </div>
+        <div id='signature'></div>
+        <div id='links'>
+            <a href='https://www.instagram.com/annarose0113/' target='_blank'>
+                <img class='socialLogo' src='../../img/insta.png' />
+            </a>
+            <a href='https://github.com/sarahRosannaBusch' target='_blank'>
+                <img class='socialLogo' src='../..//img/github.png' />
+            </a>
+            <a href='https://www.linkedin.com/in/sarah-rosanna-busch-641ab44a/' target='_blank'>
+                <img class='socialLogo' src='../../img/linkedin.png' />
+            </a>
+        </div>
+    </footer>
+
+    <script src='../../footer.js'></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src='libs/chessboardjs/chessboard.js'></script>
+    <script src='libs/chess.js'></script>
+    <script src='../../f.js'></script>
+    <script src='myChess.js'></script>
+</body>
+</html>

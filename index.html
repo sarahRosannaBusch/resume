@@ -4,44 +4,73 @@
     <meta charset='UTF-8' /> 
     <title> Sarah Rosanna Busch </title>
     <meta name='author' content='Sarah Rosanna Busch' />
-    <meta name='description' content='My resume, portfolio, and creative projects.' />
+    <meta name='description' content='My software dev resume and portfolio.' />
     <meta name='date' content='6 Sept 2020' />
     <meta name='viewport' content='width=device-width, initial-scale=1.0' />
     <link rel='icon shortcut' href='img/icon.png' />
     <link rel='stylesheet' href='styles.css' />
 </head>
-<body onload='main.init()'>
-<div class='mainContainer'>
-    <header>
+<body id='mainBody' onload='main.init()'>
+<div id='menu'>
+    <header class='avatar'>
         <img src='img/annarose.svg' />
     </header>
     <main>
         <section>
-            <h2>Creative Projects</h2>
+            <h2> Welcome to my site!</h2>
             <p>
-                I have always loved to write, draw, and solve logic puzzles. I put those skills to good use as a software developer, but I exercise them in other ways too. Check out some of my creative works here.
+                I'm a freelance software developer who specializes in web-based
+                user interfaces. I also like to write, draw, and build robots. 
+                I'm currently working on some fun stuff to level up my skillset
+                and will be showcasing it here as I go. So check back often. 
             </p>
-            <button onclick='main.nav("./illustrations/illustrations.html")'>
+        </section>
+        <section>
+            <h2>Fun Stuff</h2>
+            <button onclick='main.nav("./pages/myChess/index.html")'>
+                Play Chess
+            </button>
+            <button style='display:none'>
+                D&D Text Adventure
+            </button>
+            <button onclick='main.nav("./pages/illustrations/illustrations.html")'>
                 Illustrations
             </button>
-            <button onclick='main.nav("./book/index.html")'>
-                I'm writing a book!
+            <button onclick='main.nav("./pages/book/index.html")'>
+                Memoir
+            </button>
+        </section>
+        <section style='display:none'>
+            <h2>Notes</h2>
+            <button>
+                HTML
+            </button>
+            <button>
+                CSS
+            </button>
+            <button>
+                Javascript
+            </button>
+            <button>
+                nodeJS
             </button>
         </section>
         <section>
             <h2>Portfolio and Resume</h2>
-            <p>
-                The links here will lead you to some of my side projects and things I made for school, as well as descriptions of what I have accomplished professionally. To give you an idea of what I do.
-            </p>
-            <button onclick='main.nav("./swPortfolio/index.html")'>
+            <button onclick='main.nav("./pages/swPortfolio/index.html")'>
                 Software Portfolio
             </button>
-            <button onclick='main.nav("./resume/index.html")'>
-                Resume
+            <button onclick='main.nav("./pages/resume/index.html")'>
+                Resume 
             </button>
         </section>
     </main>
     <footer>
+        <div id='patrons'>
+            <a href='https://www.patreon.com/sarahrosannabusch' target='_blank'>
+                Become a patron
+            </a>
+        </div>
         <div id='signature'></div>
         <div id='links'>
             <a href='https://www.instagram.com/annarose0113/' target='_blank'>
