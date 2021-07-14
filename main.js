@@ -2,8 +2,12 @@
 
 /** @brief  my resume
  *  @author Sarah Rosanna Busch
- *  @date   31 Januray 2020
+ *  @date   13 July 2021
  */
+
+window.addEventListener("resize", () => { 
+    console.log(document.documentElement.clientWidth); 
+});
 
 var main = (function() {
     var that = {};
@@ -15,13 +19,13 @@ var main = (function() {
         elem.sidePanel = f.html.getElem('#sidePanel');
         elem.sideView = f.html.getElem('#sideView');
         footer.setup();
-        if(window.innerWidth >= 930) {
-            main.nav("./pages/swPortfolio/index.html");
+        if(document.documentElement.clientWidth >= 700) {
+            main.nav("./pages/book/index.html");
         }
     }
 
     that.nav = function(url) {
-        if(window.innerWidth < 700) {
+        if(document.documentElement.clientWidth < 700) {
             location.assign(url);
         } else {
             if(url === openPage) {

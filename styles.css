@@ -44,6 +44,26 @@ body {
   background-size: cover;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #343434;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 /* ****************************** Menu ***************************** */
 #menu {
   width: 100%;
@@ -272,9 +292,9 @@ footer a:link {
   #sidePanel {
     display: inline-block;
     flex: 1;
-    height: 95vh;
+    height: 100vh;
     margin: 2vh;
-    margin-right: 5vw;
+    margin-top: 0;
     box-shadow: 2px 5px 20px 5px lavender;
   }
 
@@ -300,26 +320,6 @@ footer a:link {
     display: inline-block;
     max-width: 750px;
     margin-left: 2em;
-  }
-
-  /* width */
-  ::-webkit-scrollbar {
-    width: 10px;
-  }
-
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: #343434;
-  }
-
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #888;
-  }
-
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #555;
   }
 }
 
