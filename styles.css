@@ -308,10 +308,6 @@ footer a:link {
     padding-top: 5px;
   }
 
-  footer.pageFoot, img.smAvatar {
-    display: none;
-  }
-
   .notForPhone {
     display: block !important;
   }

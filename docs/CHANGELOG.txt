@@ -1,0 +1,31 @@
+Release Date: 21 June 2021
+
+MAIN MENU
+- update text and buttons [complete]
+
+PAGE HEADERS/FOOTER [1hr]
+- add Patreon link [complete]
+
+PAGE: PLAY CHESS [1hr + stretch]
+- edit text [complete]
+- display pgn [complete]
+- fix graphics (stretch goal)
+
+PAGE: MEMOIR [1hr]
+- change header to say "Memoir" [complete]
+- fix image width bug [complete]
+
+PAGE: SOFTWARE PORTFOLIO [1hr]
+- remove inset paragraph border [complete]
+- add lanelight and QT links, and switch to cp [complete]
+- move photo site demo out of repo
+
+PAGE: ILLUSTRATIONS
+- update text and add some more pieces [complete]
+
+VERTICAL LAYOUT [1hr]
+- fix horizontal scrollbar bug [complete]
+
+HORIZONTAL LAYOUT [2hr]
+- hide avatar and footer on pages [complete]
+- keep menu on left, display page on right [complete]

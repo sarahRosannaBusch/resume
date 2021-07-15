@@ -1,0 +1,10 @@
+Target Release Date: 15 July 2021
+
+LAYOUT
+- make layout auto adjust when screen size changes [complete]
+- fix bug at screen width edge case (header, footer, scrollbar) [complete]
+
+PAGES
+- swPortfolio: rearrange order [complete]
+- resume: edit text based on Mom's suggestion [complete]
+- memoir: edit text and add Shopify button [complete]

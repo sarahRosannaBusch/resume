@@ -19,9 +19,9 @@
     #sidePanel { //container
         display: inline-block;
         flex: 1;
-        height: 95vh;
+        height: 100vh;
         margin: 2vh;
-        margin-right: 5vw;
+        margin-top: 0;
         box-shadow: 2px 5px 20px 5px lavender;
     }
 
@@ -35,10 +35,6 @@
         padding-top: 5px;
     }
 
-    footer.pageFoot, img.smAvatar {
-        display: none;
-    }
-
     .notForPhone { //skl for example
         display: block !important;
     }
@@ -49,24 +45,4 @@
         margin-left: 2em;
     }
 
-
-  /* width */
-  ::-webkit-scrollbar {
-    width: 10px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: $grey3;
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #888;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #555;
-  }
 }
